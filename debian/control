@@ -1,0 +1,27 @@
+Source: ruby-thread-order
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Cédric Boutillier <boutil@debian.org>
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb,
+               rake,
+               ruby-rspec
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-thread-order.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-thread-order.git
+Homepage: https://github.com/JoshCheek/thread_order
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-thread-order
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: test helper for ordering threaded code
+ This Ruby library provides a test helper for ordering threaded code. It does
+ not depend on other Ruby packages or the standard library.
+ It is in particular used internally by the RSpec behavior driven development
+ framework, provided in Debian by the ruby-rspec package.

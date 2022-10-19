@@ -1,0 +1,12 @@
+ruby-thread-order (1.1.0-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 18:58:23 +0100
+
+ruby-thread-order (1.1.0-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Cédric Boutillier <boutil@debian.org>  Sat, 13 Jun 2015 21:28:56 +0200
